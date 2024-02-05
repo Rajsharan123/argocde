@@ -36,8 +36,8 @@ spec:
   type: ClusterIP
   ports:
   - name:  http
-    port:  80
-    targetPort: 80
+    port:  443
+    targetPort: 443
     protocol: TCP
   selector:
     app: app-test-1
@@ -58,7 +58,7 @@ spec:
           service:
             name: app-test-1-svc 
             port:
-              number: 80
+              number: 443
   tls:
   - hosts:
     - app.technoraj.uk
