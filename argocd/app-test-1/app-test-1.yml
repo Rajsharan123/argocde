@@ -68,7 +68,7 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
   name: app-test-1-cert
-  namespace: default
+  namespace: cert-manager
 spec:
   secretName: app-test-1-tls-secret
   issuerRef:
